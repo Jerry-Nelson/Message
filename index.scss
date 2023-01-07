@@ -1,0 +1,102 @@
+body::before{
+    content: '';
+    display: block;
+    height: 50px;
+    width: 100%;
+}
+
+section{
+    .man{
+        height: 400px;
+        width: 300px;
+    }
+}
+.section{
+    .cards{
+        transition: 0.3s;
+        cursor: pointer;
+    }
+}
+
+section{
+    .writing{
+        animation: slideInFromLeft 1s ease-in;
+    }
+    .pic{
+        animation: slideInFromRight 1s ease-in;
+    }
+}
+section{
+    .letter{
+        animation: slideInFromBottom 1s ease-in;
+    }
+}
+@keyframes slideInFromLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromRight{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromTop{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromBottom{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+@media(min-width: 768px) {
+    section{
+        .news-input{
+            width: 600px;
+        }
+    }
+
+}
+@media(max-width: 600px){
+    .section{
+        .first{
+            animation: slideInFromLeft 1s ease-in 2s;
+            
+        }
+        .second{
+            animation: slideInFromRight 1s ease-in 3s;
+        }
+        .third{
+            animation: slideInFromLeft 1s ease-in 4s;
+        }
+    }
+    section{
+        .third{
+            animation: slideInFromRight 1s ease-in 5s;
+        }
+    }
+    section{
+        .writing{
+            animation: slideInFromTop 1s ease-in;
+        }
+        .pic{
+            animation: slideInFromBottom 1s ease-in;
+        }
+    }
+}
