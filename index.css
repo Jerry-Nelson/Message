@@ -126,22 +126,6 @@ section .letter {
 }
 
 @media (max-width: 600px) {
-  .section .first {
-    -webkit-animation: slideInFromLeft 1s ease-in 2s;
-            animation: slideInFromLeft 1s ease-in 2s;
-  }
-  .section .second {
-    -webkit-animation: slideInFromRight 1s ease-in 3s;
-            animation: slideInFromRight 1s ease-in 3s;
-  }
-  .section .third {
-    -webkit-animation: slideInFromLeft 1s ease-in 4s;
-            animation: slideInFromLeft 1s ease-in 4s;
-  }
-  section .third {
-    -webkit-animation: slideInFromRight 1s ease-in 5s;
-            animation: slideInFromRight 1s ease-in 5s;
-  }
   section .writing {
     -webkit-animation: slideInFromTop 1s ease-in;
             animation: slideInFromTop 1s ease-in;
